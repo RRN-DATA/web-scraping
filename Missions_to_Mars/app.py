@@ -23,8 +23,8 @@ collection = db.mars_data
 # List of Dictionaries of hemi_images
 
 
-@app.route("/")
-def index():
+@app.route("/scrape")
+def scrape():
     # write a statement that finds all the items in the db and sets it to a variable
     mars = list(db.collection.find())
     print(mars)
